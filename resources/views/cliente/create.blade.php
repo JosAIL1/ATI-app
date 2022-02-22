@@ -1,11 +1,11 @@
-@extends('layouts.plantilla');
-@extends('layouts.app');
+
+@extends('layouts.app')
 <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 
 @section('contenido')
 <div class="content">
 
-        <!-- <h1 class="logo"> <span> Contacto Soporte</span></h1> -->
+        <h1 class="logo"> <span> Contacto Soporte</span></h1>
 
         <div class="contact-wrapper animated bounceInUp">
             <div class="contact-form">
@@ -87,7 +87,8 @@ Alfonso Reyes #314, Col. Jardines Vista Hermosa, Colima, Col. C.P. 28017
                 <p>No dejes que tu equipo se deteriore por falta de servicio, el área de Soporte Técnico de ATI te apoya a solucionar de forma integral problemas referentes con el funcionamiento de tu Aula Interactiva y sus componentes. Nuestra prioridad es buscar soluciones que 
                     le permitan ahorrar, mejorar y optimizar los tiempos de operación.</p>
                     <br>
-                <p>www.tecnologiaintegrada.com.mx</p>
+                <a href="https://tecnologiaintegrada.com.mx/" style="color:blue;">www.tecnologiaintegrada.com.mx</a>
+              
             </div>
         </div>
 

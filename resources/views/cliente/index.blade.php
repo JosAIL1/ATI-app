@@ -1,18 +1,24 @@
-@extends('layouts.plantilla');
+@extends('layouts.app')
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
 @section('contenido')
 
-<h1>Consulta datos cliente y seguimiento garantia
+
 </h1>
 <a href="clientes/create" class="btn btn-primary">Crear</a>
-<table class="table table-dark table-striped mt-4">
+
+
+
+<table class="table table-bordered table-hover">
     <thead>
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Nombre</th>
             <th scope="col">Apellidos</th>
             <th scope="col">Correo</th>
-            <th scope="col">Dependencia</th>
+            <th scope="col">Dependencia</th>  
             <th scope="col">Area</th>
             <th scope="col">Domicilio</th>
             <th scope="col">Teléfono</th>
@@ -46,15 +52,20 @@
                 <a href="/clientes/{{$clientes->id}}/edit" class="btn btn-info">Editar</a>
                 @csrf
                 @method('DELETE')
+
                 <button  type="submit" class="btn btn-danger">Borrar</button>
+                
                 </form>
             </td>
             
 
         </tr>
         @endforeach
-    </tbody>
 
+    </tbody>
+        
+
+    <script src="{{ asset('js/script.js') }}"></script>
 </table>
 
 @endsection

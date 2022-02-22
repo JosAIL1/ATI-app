@@ -27,6 +27,9 @@ return new class extends Migration
             $table->string('serie',50);
             $table->string('factura',50);
             $table->string('falla',500);
+
+
+            
           
             $table->timestamps();
         });

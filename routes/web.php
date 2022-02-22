@@ -18,7 +18,10 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+
+// rutas para clientes 
 Route::resource('clientes', 'App\Http\Controllers\ClienteController');
+// rutas para servicios
+Route::resource('servicios', 'App\Http\Controllers\ServicioController');
 
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
